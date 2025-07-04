@@ -1,1 +1,251 @@
-# shred
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Personal Training Business</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #007BFF;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* About */
+    #about p {
+      font-size: 1.1rem;
+      max-width: 700px;
+    }
+
+    /* Services */
+    #services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .service-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-card h3 {
+      margin-bottom: 10px;
+      color: #007BFF;
+    }
+    .service-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Testimonials */
+    #testimonials {
+      background: #007BFF;
+      color: white;
+      padding: 40px 20px;
+      border-radius: 8px;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .testimonial {
+      font-style: italic;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+    .testimonial-author {
+      font-weight: 700;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    /* Contact */
+    #contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    #contact label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    #contact input, #contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1.5px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+    #contact input:focus, #contact textarea:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+    #contact button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    #contact button:hover {
+      background: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      background: #222;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav a {
+        margin: 0 8px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name - Personal Trainer</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi! I'm Your Name, a certified personal trainer dedicated to helping you achieve your fitness goals. With over X years of experience, I specialize in personalized workout plans, nutrition guidance, and motivation to keep you on track.</p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <div class="service-card">
+        <h3>One-on-One Training</h3>
+        <p>Personalized sessions tailored to your fitness level and goals to maximize results.</p>
+      </div>
+      <div class="service-card">
+        <h3>Group Classes</h3>
+        <p>Fun and motivating group workouts designed to build strength and community.</p>
+      </div>
+      <div class="service-card">
+        <h3>Online Coaching</h3>
+        <p>Flexible remote training programs with regular check-ins and support.</p>
+      </div>
+      <div class="service-card">
+        <h3>Nutrition Planning</h3>
+        <p>Customized meal plans and nutrition advice to complement your training.</p>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>What Clients Say</h2>
+      <div class="testimonial">
+        "Thanks to Your Name, I achieved my fitness goals faster than I imagined. Highly recommend!"
+        <div class="testimonial-author">- Client A</div>
+      </div>
+      <div class="testimonial">
+        "Professional, motivating, and knowledgeable. The best personal trainer I've worked with."
+        <div class="testimonial-author">- Client B</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form" action="mailto:your.email@example.com" method="POST" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Your email address" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Your Name Personal Training. All rights reserved.
+  </footer>
+
+</body>
+</html>
